@@ -1,0 +1,9 @@
+<button type="button" (click)="moveZone()">Click for show menu</button>
+<div>{{list}}</div>
+<div *ngIf="showList">
+  <ng-content select="dump-1"></ng-content>
+  <span>dump-1</span>
+  <span>dump-2</span>
+  <div>{{text}}</div>
+</div>
+

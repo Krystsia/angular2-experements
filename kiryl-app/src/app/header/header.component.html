@@ -1,0 +1,20 @@
+<p class="header">
+  Hello {{title}}
+  <app-menu><dump-1><div #sometag>AAA</div>Here is slot</dump-1><dump-1>Here is slot as well</dump-1></app-menu>
+</p>
+<form #form="ngForm">
+  <label for="text">first input</label>
+  <input type="text" id="text" ngModel name="firstInput">
+  <input type="submit" (click)="onSubmit(form.value)">
+</form>
+<app-modal *ngIf="showModal" [data]="modalData">
+    <ul>
+      <li>{{modalData}}</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+      <li>item6</li>
+    </ul>
+</app-modal>
+

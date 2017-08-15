@@ -1,0 +1,7 @@
+<form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+  <input type="text" ngModel name="name">
+  <input type="text" ngModel name="age">
+  <input type="text" [formControl]="someInput" name="some">
+  <button type="submit" >Submit</button>
+</form>
+

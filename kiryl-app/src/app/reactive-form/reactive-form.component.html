@@ -1,0 +1,8 @@
+<!--<form [formGroup]="reactiveForm" (ngSubmit)="submitForm(reactiveForm.value)">
+  <input type="text" [formControl]="reactiveForm.controls['name']">
+  <input type="text" [formControl]="reactiveForm.controls['age']">
+  <button type="submit">Submit</button>
+</form>-->
+
+<input type="text" [formControl]="reactiveControl">
+<div>{{ reactiveControl.errors?.strange}}</div>
